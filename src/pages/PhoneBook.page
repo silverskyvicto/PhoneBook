@@ -1,0 +1,12 @@
+<apex:page standardController="User" recordSetVar="Users" sidebar="true">
+	<apex:form >
+		<apex:pageBlock >
+			<apex:pageBlockTable value="{!Users}" var="u" styleClass="list">
+				<apex:column value="{!u.LastName}"/>
+				<apex:column value="{!u.FirstName}"/>
+				<apex:column value="{!u.Phone}"/>
+				<apex:column value="{!u.Email}"/>
+			</apex:pageBlockTable>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>
